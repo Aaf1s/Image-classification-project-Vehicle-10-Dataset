@@ -1,3 +1,7 @@
+# Dataset and Models
+Dataset/
+models/
+
 # Virtual environment
 venv/
 env/
@@ -6,7 +10,7 @@ env/
 __pycache__/
 *.pyc
 
-# Data files and models (optional)
+# Data files
 *.h5
 *.pkl
 *.csv
