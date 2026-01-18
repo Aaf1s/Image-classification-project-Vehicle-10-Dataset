@@ -9,6 +9,9 @@ The project covers the full ML lifecycle:
 - Model evaluation
 - Inference via CLI and Web App (Streamlit)
 
+ <img width="633" height="772" alt="image" src="https://github.com/user-attachments/assets/5f54848b-8cba-4cb6-86a1-79e432e6a647" />
+ 
+
 --------------------------------------------------
 
 VEHICLE CLASSES
