@@ -51,7 +51,7 @@ PERFORMANCE
 HOW YOU CAN RUN THIS PROJECT (STEP-BY-STEP)
 
 1. Clone the repository
-git clone https://github.com/Aafis/Image-classification-project-Vehicle-10-Dataset.git
+git clone https://github.com/Aaf1s/Image-classification-project-Vehicle-10-Dataset.git
 cd Image-classification-project-Vehicle-10-Dataset
 
 2. Create and activate a virtual environment
