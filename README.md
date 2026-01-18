@@ -1,17 +1,17 @@
 # Vehicle Image Classification using Deep Learning
 
 A production-ready image classification system that identifies vehicle types
-from images using a fine-tuned **MobileNetV2** deep learning model.
+from images using a fine-tuned MobileNetV2 deep learning model.
 
 The project covers the full ML lifecycle:
-- Data loading & preprocessing
-- Transfer learning & fine-tuning
+- Data loading and preprocessing
+- Transfer learning and fine-tuning
 - Model evaluation
 - Inference via CLI and Web App (Streamlit)
 
----
+--------------------------------------------------
 
-## Vehicle Classes
+VEHICLE CLASSES
 - bicycle
 - boat
 - bus
@@ -23,37 +23,101 @@ The project covers the full ML lifecycle:
 - train
 - truck
 
----
+--------------------------------------------------
 
-## Model Architecture
-- Base model: **MobileNetV2 (ImageNet pretrained)**
-- Input size: **224 × 224**
+MODEL ARCHITECTURE
+- Base model: MobileNetV2 (ImageNet pretrained)
+- Input size: 224 x 224
 - Transfer Learning:
   - Phase 1: Feature extraction (base frozen)
-  - Phase 2: Fine-tuning top 30% of layers
+  - Phase 2: Fine-tuning top 30 percent of layers
 - Regularization:
   - Data augmentation
   - Dropout
   - L2 weight decay
 
----
+--------------------------------------------------
 
-## Performance
-- Validation Accuracy: **~89.6%**
-- Dataset size: **36,006 images**
+PERFORMANCE
+- Validation Accuracy: approximately 89.6 percent
+- Dataset size: 36,006 images
 - Evaluation includes:
   - Classification report
   - Confusion matrix
-  - Accuracy & loss curves
+  - Accuracy and loss curves
 
----
+--------------------------------------------------
 
-## Web App Demo (Streamlit)
+HOW YOU CAN RUN THIS PROJECT (STEP-BY-STEP)
 
-Upload an image and instantly get:
+1. Clone the repository
+git clone https://github.com/Aafis/Image-classification-project-Vehicle-10-Dataset.git
+cd Image-classification-project-Vehicle-10-Dataset
+
+2. Create and activate a virtual environment
+python -m venv venv
+
+Windows:
+venv\Scripts\activate
+
+macOS or Linux:
+source venv/bin/activate
+
+3. Install dependencies
+pip install -r requirements.txt
+
+4. Run the Streamlit web application
+streamlit run src/inference/app.py
+
+5. Open the browser
+The app will open automatically, or visit:
+http://localhost:8501
+
+Upload any vehicle image to get:
 - Predicted vehicle type
 - Confidence score
 
-### Run the app locally:
-```bash
-streamlit run src/inference/app.py
+--------------------------------------------------
+
+OPTIONAL: MODEL TRAINING
+Training is NOT required for inference.
+A trained model is already included.
+
+To retrain the model:
+python src/training/train.py
+
+Saved artifacts:
+- models/vehicle10_mobilenet_best.keras
+- models/vehicle10_mobilenet_last.keras
+- models/training_history.json
+
+--------------------------------------------------
+
+OPTIONAL: MODEL EVALUATION
+python src/evaluation/evaluate_model.py
+
+--------------------------------------------------
+
+OPTIONAL: CLI IMAGE PREDICTION
+python src/inference/predict_image.py
+
+--------------------------------------------------
+
+PROJECT STRUCTURE
+src/
+  training/
+  evaluation/
+  inference/
+  utils/
+
+models/
+reports/
+predictions/
+
+--------------------------------------------------
+
+NOTES
+- Fully runnable on CPU
+- No notebooks required
+- Clean, modular ML pipeline
+- Both CLI and Web-based inference supported
