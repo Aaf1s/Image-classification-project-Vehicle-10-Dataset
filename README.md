@@ -110,6 +110,7 @@ python src/inference/predict_image.py
 
 PROJECT STRUCTURE
 
+```text
 src/
   training/
   evaluation/
@@ -117,8 +118,11 @@ src/
   utils/
 
 models/
-reports/
-predictions/
+
+README.md
+requirements.txt
+```
+
 
 --------------------------------------------------
 
