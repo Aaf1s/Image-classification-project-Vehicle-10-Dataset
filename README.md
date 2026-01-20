@@ -109,6 +109,7 @@ python src/inference/predict_image.py
 --------------------------------------------------
 
 PROJECT STRUCTURE
+
 src/
   training/
   evaluation/
