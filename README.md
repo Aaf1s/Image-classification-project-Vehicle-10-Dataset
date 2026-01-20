@@ -96,12 +96,14 @@ Saved artifacts:
 
 --------------------------------------------------
 
-OPTIONAL: MODEL EVALUATION
+OPTIONAL: Model Evaluation
+
 python src/evaluation/evaluate_model.py
 
 --------------------------------------------------
 
-OPTIONAL: CLI IMAGE PREDICTION
+OPTIONAL: CLI Image Prediction
+
 python src/inference/predict_image.py
 
 --------------------------------------------------
